@@ -12,13 +12,13 @@ from data_utils import TextMelLoader
 import matplotlib.pyplot as plt
 mel_loader=TextMelLoader(hp.training_files,hp)
 print(mel_loader[10])
-# for wav in glob.glob("audio_segments/wavs/*.wav"):
-#     wav,sr=librosa.load(wav,sr=22050)
-#     print(len(wav))
-#     sf.write("demo/test.wav",wav,samplerate=22050)
-#     # mel_spec = mel_loader.get_mel(wav)
-#     # plt.imsave("demo/ground_truth.jpg", mel_spec)
-#     break
+for wav in glob.glob("audio_segments/wavs/*.wav"):
+    wav,sr=librosa.load(wav,sr=22050)
+    print(len(wav))
+    sf.write("demo/test.wav",wav,samplerate=22050)
+    # mel_spec = mel_loader.get_mel(wav)
+    # plt.imsave("demo/ground_truth.jpg", mel_spec)
+    break
 
 # print(len(glob.glob(hp.wav_dir+"/*.wav")))
 # max_wav_value=0.0
