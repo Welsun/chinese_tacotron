@@ -30,25 +30,5 @@ for wav in glob.glob("audio_segments/wavs/*.wav"):
 #
 # print(max_wav_value)
 
-# train_loader,_,_=prepare_dataloaders(hp)
-# print(train_loader)
-# for batch in train_loader:
-#     # print(train_loader.batch_size)
-#     # print(len(batch))
-#     text_padded, input_lengths, mel_padded, gate_padded, \
-#     output_lengths = batch
-#     print(text_padded.shape)
-#     print(input_lengths.shape)
-#     print(input_lengths)
-#     break
-#     # max_len=torch.max(input_lengths).item()
-#     # ids = torch.arange(0, max_len, out=torch.LongTensor(max_len))
-#     # print(ids)
-#     # mask = (ids < input_lengths.unsqueeze(1)).bool()
-#     # print(mask)
-#     # print(mel_padded.shape)
-#     # print(gate_padded.shape)
-#     # print(gate_padded[:,1])
-#     # print(output_lengths)
-#     break
+
 
